@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 400;
+    font-family: 'Kumbh Sans';
+    
+}
+
+.background {
+    background: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat, no-repeat;
+  background-position: right 51vw bottom 39vh, left 48vw top 52vh;
+  background-color: hsl(185, 75%, 39%);
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.conteudo {
+    position: absolute;
+    background-color: white;
+    height: 450px;
+    width: 450px;
+    border-radius: 15px;
+}
+
+.imagem-fundo {
+    position: relative;
+    background-image: url(../images/bg-pattern-card.svg);
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    position: relative;
+    left: 0;
+    top: 0;
+    border-radius: 15px 15px 0 0;
+    
+}
+
+.img-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -56px;
+    left: 170px;
+    background: white;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+}
+
+.img-perfil img {
+    border-radius: 50%;
+}
+
+.nome-perfil {
+    display: flex;
+    align-items: flex-start;
+    height: 20%;
+    position: relative;
+    left: 120px;
+    bottom: 50px;
+}
+
+.nome-perfil h1 {
+    text-align: center;
+    padding: 9px;
+    font-size: 23px;
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+
+.nome-perfil h2 {
+    position: relative;
+    top: 11px;
+    left: 1px;
+    font-weight: 400;
+    font-size: 21px;
+    color: hsl(0, 0%, 59%);
+}
+
+.nome-perfil h3 {
+    position: relative;
+    top: 35px;
+    right: 115px;
+    padding: 13px;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+
+hr {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    right: 120px;
+}
+
+.grid-perfil {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid-conteudo {
+    text-align: center;
+}
+
+.grid-conteudo h2 {
+    color: hsl(229, 23%, 23%);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.grid-conteudo h3 {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+.attribution {
+    position: fixed;
+    color: hsl(0, 0%, 0%);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .attribution a {
+    color: hsl(228, 100%, 25%);
+  }
